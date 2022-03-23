@@ -298,6 +298,11 @@ input:focus::placeholder {
     padding: 0 20px;
   }
 
+  .email article {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+
   .projects .project .project-desc {
     font-size: 18px;
     width: 80%;
@@ -308,6 +313,6 @@ input:focus::placeholder {
   }
 
   .form .button #formBtn {
-    width: 40%;
+    width: 55%;
   }
 }
