@@ -308,6 +308,10 @@ input:focus::placeholder {
     width: 80%;
   }
 
+  .form {
+    min-width: 100%;
+  }
+
   .form .inputs:first-of-type {
     flex-direction: column;
   }
