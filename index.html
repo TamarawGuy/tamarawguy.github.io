@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Resume</title>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("AcSbHWuzWstJ07mEE");
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p>Email has been successfully sent!</p>
+        <button class="modalBtn">Close</button>
+      </div>
+    </div>
+    <div class="sections">
+      <section class="intro">
+        <img src="images/my-pic.jpg" alt="picture of me" />
+        <h1 class="name">Viktor Rumenov</h1>
+        <p class="description">
+          Entry-level Web Developer with 1 and a half years of experience in the
+          Back-End. I am able to learn and collaborate in rapidly changing
+          environments and situations. Great desire to tackle web
+          development/design challenges to achieve lasting impact on user
+          experience.
+        </p>
+      </section>
+
+      <section class="projects">
+        <h2 class="title">Projects</h2>
+
+        <div class="project">
+          <img src="images/furniture.png" alt="project pic" />
+          <p class="project-desc">
+            In the process, I implemented CRUD operations with pure JavaScript.
+            The front-end GUI is designed with HTML and CSS. I have used
+            javascript libraries like lit-html and page.js for the components of
+            my application This is a project, which gave me a great start with
+            understanding Javascript Framework concepts, like in React.
+          </p>
+          <div class="links">
+            <span
+              ><a
+                href="https://github.com/TamarawGuy/Furniture-Project"
+                target="_blank"
+                >Source</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="images/grudges.png" alt="project pic" />
+          <p class="project-desc">
+            A React project for keeping track of people, who have been evil to
+            me. It's a joke of course. While doing this project I implemented
+            core React concepts like useReducer hook for managing state and
+            createContext, useContext for dealing with prop driling problem.
+          </p>
+          <div class="links">
+            <span
+              ><a
+                href="https://github.com/TamarawGuy/React-Grudges-App"
+                target="_blank"
+                >Source</a
+              ></span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="email">
+        <article>
+          <h2>Send me a message</h2>
+          <p>
+            Got a question or proposal, or just want <br />
+            to say hello? Go ahead.
+          </p>
+        </article>
+        <!-- Set Required after test -->
+        <form class="form">
+          <div class="inputs">
+            <div class="input-name">
+              <label for="fromName"> Your Name </label>
+              <input
+                type="text"
+                id="fromName"
+                name="fromName"
+                placeholder="Enter your name"
+                required="required"
+              />
+            </div>
+            <div class="input-email">
+              <label for="fromEmail"> Your Email </label>
+              <input
+                type="email"
+                id="fromEmail"
+                name="fromEmail"
+                required="required"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="inputs">
+            <div class="textarea">
+              <label for="message"> Your message </label>
+              <textarea
+                name="message"
+                id="message"
+                rows="7"
+                minlength="30"
+                required="required"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="button">
+            <button id="formBtn">Shoot</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
